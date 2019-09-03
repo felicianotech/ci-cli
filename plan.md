@@ -41,3 +41,23 @@ ci config
 	ci config create
 		create a new template for a CI config. Can optionally use a template file
 		https://github.com/CircleCI-Public/circleci-cli/issues/189
+
+ci projects list
+	list all projects on the CI provider that you follow
+	
+ci project
+	a group of commands related to an individual project
+	
+	ci project build
+		kick off a new build for the current branch
+		--retry will rebuild the last build on the current branch
+	
+	ci project add-ssh
+		add a local SSH key to the project's SSH settings
+	
+	ci project add
+		follow/add this project on your CI provider
+	
+	ci project remove
+		unfollow/remove this project on your CI provider
+		For some providers, this jus removes you from it. The project may still build for others
